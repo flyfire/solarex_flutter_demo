@@ -46,7 +46,7 @@ class _LifecycleDemoPage1State extends State<LifecycleDemoPage1>
       body: Center(
         child: Column(
           children: <Widget>[
-            MaterialButton(
+            ElevatedButton(
                 child: Text("打开/关闭新页面查看状态变化"),
                 onPressed: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) => const LifecycleDemoPage2()));
