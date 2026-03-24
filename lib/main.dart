@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:solarex_flutter_demo/LifecycleDemoApp.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const LifecycleDemoApp());
 }
 
 class MyApp extends StatelessWidget {
