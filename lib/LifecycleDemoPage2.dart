@@ -35,7 +35,7 @@ class _LifecycleDemoPage2State extends State<LifecycleDemoPage2> {
   Widget build(BuildContext context) {
     print('page2 build...');
     return Scaffold(
-      appBar: AppBar(title: Text("setState demo"),),
+      appBar: AppBar(title: const Text("setState demo"),),
       body: Center(
         child: ElevatedButton(onPressed: () {
           setState(() {

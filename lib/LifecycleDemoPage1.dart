@@ -6,7 +6,7 @@ class LifecycleDemoPage1 extends StatefulWidget {
 
   @override
   State<StatefulWidget> createState() {
-    return new _LifecycleDemoPage1State();
+    return _LifecycleDemoPage1State();
   }
 }
 
@@ -42,12 +42,12 @@ class _LifecycleDemoPage1State extends State<LifecycleDemoPage1>
   Widget build(BuildContext context) {
     print("page1 build....");
     return Scaffold(
-      appBar: AppBar(title: Text("Lifecycle Demo Page1"),),
+      appBar: AppBar(title: const Text("Lifecycle Demo Page1"),),
       body: Center(
         child: Column(
           children: <Widget>[
             ElevatedButton(
-                child: Text("打开/关闭新页面查看状态变化"),
+                child: const Text("打开/关闭新页面查看状态变化"),
                 onPressed: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) => const LifecycleDemoPage2()));
                 }

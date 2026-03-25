@@ -24,7 +24,7 @@ class ParallelWidget extends StatelessWidget {
     return CustomScrollView(
       slivers: <Widget>[
         SliverAppBar(
-          title: Text("CustomScrollView Demo"),
+          title: const Text("CustomScrollView Demo"),
           floating: true,
           flexibleSpace: Image.network(
             "https://media-cdn.tripadvisor.com/media/photo-s/13/98/8f/c2/great-wall-hiking-tours.jpg",
@@ -51,7 +51,7 @@ class ScrollNotificationWidget extends StatelessWidget {
     return MaterialApp(
       title: "Scroll Notification Demo",
       home: Scaffold(
-        appBar: AppBar(title: Text("ScrollController Demo"),),
+        appBar: AppBar(title: const Text("ScrollController Demo"),),
         body: NotificationListener<ScrollNotification>(
           child: ListView.builder(
             itemBuilder: (context, index) =>
@@ -109,20 +109,20 @@ class _ScrollControllerState extends State<ScrollControllerWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Scroll Controller Widget"),),
+      appBar: AppBar(title: const Text("Scroll Controller Widget"),),
       body: Column(
         children: <Widget>[
-          Container(
+          SizedBox(
             height: 40.0,
             child: ElevatedButton(onPressed: (
                 isToTop ? () {
                   if (isToTop) {
                     _controller.animateTo(
-                        .0, duration: Duration(milliseconds: 200),
+                        .0, duration: const Duration(milliseconds: 200),
                         curve: Curves.ease);
                   }
                 } : null
-            ), child: Text("Top")),
+            ), child: const Text("Top")),
           ),
           Expanded(child:
             ListView.builder(
