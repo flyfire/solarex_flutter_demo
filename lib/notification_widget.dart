@@ -15,7 +15,7 @@ class CustomChild extends StatelessWidget {
         onPressed: () {
           CustomNotification("hi").dispatch(context);
         },
-        child: Text("Fire Notification"));
+        child: const Text("Fire Notification"));
   }
 }
 

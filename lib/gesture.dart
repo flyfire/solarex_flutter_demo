@@ -38,7 +38,7 @@ class _DragState extends State<DragWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("demo"),
+        title: const Text("demo"),
       ),
       body: Stack(
         children: [

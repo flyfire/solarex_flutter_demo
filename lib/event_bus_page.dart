@@ -44,7 +44,7 @@ class _DataTransferFirstPageState extends State<DataTransferFirstPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("First page"),),
+      appBar: AppBar(title: const Text("First page"),),
       body: Text(msg),
       floatingActionButton: FloatingActionButton(onPressed: () {
         Navigator.push(context, MaterialPageRoute(builder: (context) => const DataTransferSecondPage()));
@@ -60,10 +60,10 @@ class DataTransferSecondPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Second Page"),),
+      appBar: AppBar(title: const Text("Second Page"),),
       body: TextButton(onPressed: () {
         eventBus.fire(CustomEvent("hello"));
-      }, child: Text("Fire event")),
+      }, child: const Text("Fire event")),
     );
   }
 

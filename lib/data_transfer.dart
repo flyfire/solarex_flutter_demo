@@ -3,9 +3,11 @@ import 'package:solarex_flutter_demo/count_container.dart';
 import 'package:solarex_flutter_demo/event_bus_page.dart';
 import 'package:solarex_flutter_demo/notification_widget.dart';
 
-void main() => runApp(DataTransferApp());
+void main() => runApp(const DataTransferApp());
 
 class DataTransferApp extends StatelessWidget {
+  const DataTransferApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
